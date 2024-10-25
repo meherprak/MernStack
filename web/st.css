@@ -2,8 +2,21 @@ form
 {
     display: flex;
     flex-direction: row;
-    align-items: left;
+    align-items: center;
     justify-content: center;
 
+}
+
+.one
+{
+    width:40%;
+    height: 100px;;
+    padding: 40px;
+}
+.two
+{
+    width:40%;
+    height: 100px;
+    padding: 40px;
 }
 

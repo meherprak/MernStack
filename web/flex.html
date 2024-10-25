@@ -7,10 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <from class="login-form">
+    <form class="login-form" onsubmit="Login(event)">
         <input type="email" placeholder="Email" class="login-input" id="login-email">
         <input type="password" placeholder="Password" class="login-input" id="login-password">
-        <input type="submit" value="Login" class="login-bt">
-    </from>
+        <button type="submit">login</button>
+    </form>
 </body>
+<script>
+    function Login(event)
+    {
+      event.preventDefault();
+        console.log("login"); 
+
+        let  email=document.getElementById('login-email').value;
+        let  pass=document.getElementById('login-password').value;
+        console.log(email);
+        console.log(pass);
+        
+    }
+
+</script>
 </html>
