@@ -1,16 +1,55 @@
-from{
-    text-align: center;
+body{
+    height: 100vh;
+    width:100vw;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
-p{
-    color: yellow;
-}
-*{
-    color:blue;
-}
-.myclass{
-    background-color: green;
-}
-#myclass
+.login-form
 {
-    background-color: red;
+    background-color: rgb(59, 198, 198);
+    height:30vh;
+    width:25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    border-radius: 8px;
+    box-shadow:
+    3.3px 1.8px 3.6px rgba(0, 0, 0, 0.174),
+    9px 5px 18px rgba(0, 0, 0, 0.25),
+    21.7px 12.1px 62.3px rgba(0, 0, 0, 0.326),
+    72px 40px 152px rgba(0, 0, 0, 0.5)
+  ;
+}
+.login-input 
+{
+    padding:1rem;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.login-bt
+{
+    padding:1rem;
+    width: 85%;
+    outline: none;
+    color: white;
+    background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+.login-bt:hover
+{
+    border:2px solid green;
 }
