@@ -16,14 +16,41 @@
 <script>
     function Login(event)
     {
-      event.preventDefault();
+        event.preventDefault();
         console.log("login"); 
 
         let  email=document.getElementById('login-email').value;
         let  pass=document.getElementById('login-password').value;
         console.log(email);
         console.log(pass);
+        if(pass.length < 5)
+        {
+            alert("password should contains more than 5 letters")
+        }
+        else if(email==="admin@gmail.com" && pass ==="123456")
+        {
+            alert("login sucessful")
+            API();
+        }
+        else
+        {
+            alert("invalid credinatial")
+        }
         
+    }
+    async function API()
+    {
+        console.log("api called");
+        try
+        {
+            const response= await fetch("https://671b70c52c842d92c37feac5.mockapi.io/productsapp/products");
+            let r=response.json();
+            console.log(await r);
+        }
+        catch(error)
+        {
+            console.error(error)
+        }
     }
 
 </script>
