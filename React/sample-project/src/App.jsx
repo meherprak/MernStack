@@ -7,7 +7,8 @@ const App = () => {
     };
   const test="hello world"
   return (
-      <>   
+      <>
+
         <p className="text-green-500">{test}</p>
         <Navbar param1={data}/>
       </>
