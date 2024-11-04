@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom"
-
 const Navbar = () => {
     const Linksdata = [
         {
@@ -13,17 +12,13 @@ const Navbar = () => {
         {
             title: 'Contact',
             path: '/contact'
-        },
-        {
-            title:'Login',
-            path: '/login'
         }
     ]
     return (
         <>
             <div className='w-screen h-14 shadow-purple-500 shadow-md flex flex-row justify-center items-center'>
                 <div className='w-[40%] flex justify-start items-center font-bold text-2xl text-purple-500'>
-                    Meher  Store
+                    Max Store
                 </div>
                 <div className='w-[40%] h-full flex justify-end items-center '>
                     <div className='w-full h-full flex flex-row justify-end items-center gap-8 font-bold'>
@@ -39,5 +34,4 @@ const Navbar = () => {
         </>
     )
 }
-
 export default Navbar
